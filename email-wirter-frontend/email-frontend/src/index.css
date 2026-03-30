@@ -1,0 +1,122 @@
+/* ===== RESET ===== */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== WARM BACKGROUND ===== */
+body {
+ background: linear-gradient(135deg, #fff3e6, #ffe0cc);
+}
+
+/* ===== MAIN CONTAINER ===== */
+.MuiContainer-root {
+ max-width: 850px !important;
+ margin: 40px auto;
+ background: #ffffff;
+ padding: 30px !important;
+ border-radius: 14px;
+ box-shadow: 0 6px 25px rgba(255, 140, 90, 0.2);
+}
+
+/* ===== MAIN HEADING ===== */
+.MuiTypography-h2 {
+ text-align: center;
+ font-size: 30px !important;
+ font-weight: 700 !important;
+ color: #d35400;
+ margin-bottom: 25px !important;
+ letter-spacing: 1px;
+}
+
+/* ===== FORM SPACING ===== */
+.MuiBox-root {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+
+/* ===== INPUT LABEL STYLE ===== */
+.MuiInputLabel-root {
+ color: #a04000 !important;
+ font-weight: 600;
+}
+
+.MuiInputLabel-root.Mui-focused {
+ color: #e67e22 !important;
+}
+
+/* ===== INPUT FIELDS ===== */
+.MuiTextField-root {
+ background: #fff7f2;
+ border-radius: 10px;
+}
+
+/* Focus glow */
+.MuiOutlinedInput-root.Mui-focused fieldset {
+ border-color: #e67e22 !important;
+ box-shadow: 0 0 6px rgba(230, 126, 34, 0.4);
+}
+
+/* ===== ORIGINAL EMAIL (SMALL) ===== */
+.MuiTextField-root textarea {
+ min-height: 90px ;
+ font-size: 14px;
+}
+
+/* ===== GENERATED REPLY (MAIN FOCUS) ===== */
+.MuiTextField-root:last-of-type textarea {
+ min-height: 200px ;
+ background: #fff0e6;
+ border-radius: 10px;
+ padding: 12px;
+ font-size: 15px;
+ line-height: 1.6;
+}
+
+/* ===== DROPDOWN ===== */
+.MuiFormControl-root {
+ background: #fff7f2;
+ border-radius: 10px;
+}
+
+/* ===== BUTTON (PRIMARY) ===== */
+.MuiButton-contained {
+ background: linear-gradient(135deg, #ff7e5f, #ff9966);
+ color: white;
+ font-weight: 600;
+ border-radius: 8px !important;
+ padding: 10px;
+ transition: 0.3s;
+}
+
+.MuiButton-contained:hover {
+ background: linear-gradient(135deg, #ff6a4a, #ff8c5a);
+ transform: scale(1.02);
+}
+
+/* ===== COPY BUTTON ===== */
+.MuiButton-outlined {
+ border: 1px solid #e67e22;
+ color: #e67e22;
+ border-radius: 8px !important;
+}
+
+.MuiButton-outlined:hover {
+ background: #e67e22;
+ color: white;
+}
+/* Smooth textarea growth */
+textarea {
+ resize: none;
+ /* disable manual resize */
+ overflow: hidden;
+ /* hide scrollbar */
+ transition: height 0.2s ease;
+}
+/* ===== EXTRA: SOFT SCROLL ===== */
+textarea {
+ scrollbar-width: thin;
+} 
